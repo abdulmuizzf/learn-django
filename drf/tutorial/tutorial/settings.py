@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+4rl*gbie-9dtbbee+tp5#p@^!r=pw=)7sur5b+29x0j&vem1b'
+SECRET_KEY = '@%91i-!xm1hyal$h=kp_&qq@+4n4z)v2os_a^*xr5+4yv!xmfb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'tutorial.quickstart.apps.QuickstartConfig',
+    'snippets.apps.SnippetsConfig'
 ]
 
 MIDDLEWARE = [
@@ -71,10 +71,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tutorial.wsgi.application'
 
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-}
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
